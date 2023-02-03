@@ -28,6 +28,19 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.section.no-top-padding {
+  padding-top: 0;
+}
+.section.portfolio {
+  padding-top: 96px;
 }
 
 .pointer {
@@ -45,8 +58,25 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+/* image no gap */
+.no-gap {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1158px;
+}
+.flex-container {
+  display: flex;
+}
 /*------------------HEADER---------------------- */
 
+.page-header {
+}
 .header-logo {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -56,13 +86,24 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-brand-iris);
+
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 15px;
+  margin-right: 76px;
 }
 
 .logo-dark {
   color: var(--dark-headings-navy);
 }
-
 .navigation {
+  display: flex;
+}
+.navigation .list {
+  display: flex;
+  gap: 40px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .navigation-link {
@@ -78,6 +119,15 @@ body {
 }
 
 .address {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.address .list {
+  display: flex;
+  gap: 40px;
 }
 
 .address-email {
@@ -104,11 +154,13 @@ body {
 .address-phone-nr:focus {
   color: var(--btn-active-ocean);
 }
+
 /*------------------INDEX MAIN---------------------- */
 
 /*---------------------HERO------------------------- */
 .hero {
   background-color: var(--dark-headings-navy);
+  text-align: center;
 }
 .hero-header {
   font-weight: 700;
@@ -117,6 +169,9 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white);
+
+  margin-top: 0;
+  margin-bottom: 64px;
 }
 .hero-button {
   font-family: inherit;
@@ -125,19 +180,29 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  border: solid var(--primary-brand-iris);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 4px;
+  letter-spacing: 0.04em;
+  padding: 16px 32px;
+  min-width: 169px;
 }
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--btn-active-ocean);
-  border: solid var(--btn-active-ocean);
+  border: none;
 }
 
 /*------------------FEATURES---------------------- */
 
 .features {
+  display: flex;
+}
+.features li {
+  width: 269px;
+  display: inline-block;
+}
+.features-list {
+  gap: 24px;
 }
 .features-item {
   font-weight: 500;
@@ -145,17 +210,28 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-headings-navy);
+
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .feautures-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /*----------------WHAT WE DO SECTION------------------- */
 
 .what-we-do {
+}
+
+.what-we-do .list {
+  display: flex;
+  gap: 24px;
 }
 
 .what-we-do-header {
@@ -166,6 +242,9 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--dark-headings-navy);
+
+  margin-top: 0;
+  margin-bottom: 72px;
 }
 
 /*-----------------OUR TEAM SECTION--------------------- */
@@ -174,8 +253,16 @@ body {
   background-color: var(--light-background-cloud);
 }
 
+.team .list {
+  display: flex;
+  gap: 24px;
+}
+
 .team-card {
   background-color: var(--white);
+  width: calc((100% - 102px) / 4);
+
+  background-color: #e7e9fc;
 }
 
 .team-header {
@@ -186,6 +273,8 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--dark-headings-navy);
+  margin-top: 0;
+  margin-bottom: 72px;
 }
 
 .team-item {
@@ -194,12 +283,23 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-headings-navy);
+
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .team-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.team-card-wrap {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
 }
 /*------------------FOOTER---------------------- */
 
@@ -226,13 +326,29 @@ body {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--accent-color-background-cornflower);
+
+  width: 264px;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.footer .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /*------------------PORTFOLIO MAIN---------------------- */
 
+.portfolio {
+}
+
 /*------------------FILTER BUTTONS---------------------- */
 
 .filter {
+}
+
+.filter-list {
+  margin-bottom: 72px;
 }
 
 .button-filter {
@@ -246,6 +362,7 @@ body {
   color: var(--primary-brand-iris);
   border: 1px solid var(--accent-color-background-cornflower);
   border-radius: 4px;
+  padding: 12px 24px;
 }
 .button-filter:hover,
 .button-filter:focus {
@@ -255,7 +372,15 @@ body {
 
 /*-----------------PORTFOLIO CARDS--------------------- */
 
+.portfolio .list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
 .portfolio-card {
+  border: 1px solid;
+  border-color: var(--accent-color-background-cornflower);
 }
 .portfolio-card-header {
   font-weight: 500;
@@ -263,10 +388,22 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-headings-navy);
+
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.portfolio-card-wrap {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
 .portfolio-card-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--body-text-slate);
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
