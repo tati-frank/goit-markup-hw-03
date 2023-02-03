@@ -25,11 +25,13 @@ body {
 .link {
   text-decoration: none;
 }
-
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.pointer {
+  cursor: pointer;
 }
 
 .section {
@@ -43,9 +45,6 @@ body {
   padding-top: 96px;
 }
 
-.pointer {
-  cursor: pointer;
-}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -73,6 +72,7 @@ body {
 .flex-container {
   display: flex;
 }
+
 /*------------------HEADER---------------------- */
 
 .page-header {
@@ -92,10 +92,10 @@ body {
   margin-left: 15px;
   margin-right: 76px;
 }
-
 .logo-dark {
   color: var(--dark-headings-navy);
 }
+
 .navigation {
   display: flex;
 }
@@ -158,6 +158,7 @@ body {
 /*------------------INDEX MAIN---------------------- */
 
 /*---------------------HERO------------------------- */
+
 .hero {
   background-color: var(--dark-headings-navy);
   text-align: center;
@@ -173,6 +174,7 @@ body {
   margin-top: 0;
   margin-bottom: 64px;
 }
+
 .hero-button {
   font-family: inherit;
   background-color: var(--primary-brand-iris);
@@ -349,6 +351,9 @@ body {
 
 .filter-list {
   margin-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 
 .button-filter {
