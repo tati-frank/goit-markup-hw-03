@@ -76,6 +76,7 @@ body {
 /*------------------HEADER---------------------- */
 
 .page-header {
+  border-bottom: 1px solid var(--accent-color-background-cornflower);
 }
 .header-logo {
   font-family: 'Raleway', sans-serif;
@@ -384,8 +385,6 @@ body {
   column-gap: 24px;
 }
 .portfolio-card {
-  border: 1px solid;
-  border-color: var(--accent-color-background-cornflower);
 }
 .portfolio-card-header {
   font-weight: 500;
@@ -402,6 +401,10 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
+
+  border-right: 1px solid var(--accent-color-background-cornflower);
+  border-bottom: 1px solid var(--accent-color-background-cornflower);
+  border-left: 1px solid var(--accent-color-background-cornflower);
 }
 .portfolio-card-text {
   font-size: 16px;
