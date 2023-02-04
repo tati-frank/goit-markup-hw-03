@@ -77,6 +77,8 @@ body {
 
 .page-header {
   border-bottom: 1px solid var(--accent-color-background-cornflower);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-logo {
   font-family: 'Raleway', sans-serif;
@@ -88,11 +90,10 @@ body {
   text-transform: uppercase;
   color: var(--primary-brand-iris);
 
-  margin-top: 24px;
-  margin-bottom: 24px;
-  margin-left: 15px;
-  margin-right: 76px;
+  padding-left: 15px;
+  padding-right: 76px;
 }
+
 .logo-dark {
   color: var(--dark-headings-navy);
 }
@@ -103,8 +104,6 @@ body {
 .navigation .list {
   display: flex;
   gap: 40px;
-  margin-top: 24px;
-  margin-bottom: 24px;
 }
 
 .navigation-link {
@@ -120,8 +119,6 @@ body {
 }
 
 .address {
-  margin-top: 24px;
-  margin-bottom: 24px;
   margin-left: auto;
   margin-right: 15px;
 }
@@ -163,17 +160,20 @@ body {
 .hero {
   background-color: var(--dark-headings-navy);
   text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-header {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
   color: var(--white);
 
+  max-width: 494px;
   margin-top: 0;
-  margin-bottom: 64px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button {
@@ -207,6 +207,8 @@ body {
 .features-list {
   display: flex;
   gap: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .features-item {
   font-weight: 500;
@@ -307,6 +309,8 @@ body {
 
 .footer {
   background-color: var(--dark-headings-navy);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -329,14 +333,13 @@ body {
   letter-spacing: 0.02em;
   color: var(--accent-color-background-cornflower);
 
-  width: 264px;
+  max-width: 264px;
   margin-top: 16px;
   margin-bottom: 0;
 }
 
 .footer .container {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-left: 15px;
 }
 
 /*------------------PORTFOLIO MAIN---------------------- */
